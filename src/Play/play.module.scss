@@ -1,0 +1,374 @@
+.PlayPage{
+    // width: 100%;
+
+    background-color: transparent;
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    z-index: 1;
+
+    padding: 4% 2%;
+}
+
+.statusPanel {
+    flex: 0 1 100%;
+    margin: 1.5% 0.3%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding: 1% 3%;
+
+    background-color: rgba(255, 255, 255, 0.37);
+
+    &>.attemptw, .scorew, .remw, .unamew, .lvlw, .badgew, .roundw{
+        // flex: 1;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        &>span:first-child{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        &>span {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+	&>.attemptw{
+
+		&>.attemptl{
+		}
+
+		&>.attemptv{
+		}
+	}
+
+	&>.remw{
+		&>.reml{
+		}
+
+		&>.remv{
+		}
+	}
+
+	&>.unamew{
+		&>.unamel{
+		}
+
+		&>.unamev{
+		}
+	}
+
+	&>.scorew{
+		&>.scorel{
+		}
+
+		&>.scorev{
+		}
+	}
+}
+
+.boardPanel {
+    flex: 0 1 100%;
+
+    margin-top: 3%;
+}
+
+@media only screen and (min-width: 600px){
+    .boardPanel{
+        padding:4% 4%;
+    }
+    
+    .statusPanel, .mainPanel{
+        margin:0.3% 4%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .boardPanel{
+        padding:2% 8%;
+    }
+    
+    .statusPanel, .mainPanel{
+        margin:0.3% 8%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .boardPanel{
+        padding:2% 18%;
+    }
+
+    .statusPanel, .mainPanel{
+        margin:0.3% 18%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .boardPanel{
+        padding:2% 20%;
+    }
+
+    .statusPanel, .mainPanel{
+        margin:0.3% 20%;
+    }
+}
+
+.board{
+    padding: 3.5% 2%;
+    background-color: rgba(255, 255, 255, 0.37);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    justify-items: stretch;
+    cursor: pointer;
+}
+
+.pocklw{
+    flex: 0 0 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.pock{
+    flex: 1;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+
+    background-color: #2ecc71;
+
+    transition: all 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.inset {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    &>img{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.displayNone {
+    display: none;
+}
+
+.mainPanel {
+    flex: 0 1 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding: 0% 3%;
+
+    background-color: rgba(255, 255, 255, 0.37);
+
+    position: relative;
+
+    &>.badgew, .lvlw, .unamew{
+        // flex: 1;
+        
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &>span:first-child{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        &>span {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+	&>.lvlw{
+
+		&>.lvll{
+		}
+
+		&>.lvlv{
+		}
+	}
+
+	&>.badgew{
+
+		&>.badgel{
+		}
+
+		&>.badgev{
+		}
+	}
+
+	&>.unamew{
+		&>.unamel{
+		}
+
+		&>.unamev{
+		}
+    }
+    
+}
+
+.timew{
+    position: absolute;
+    top: 0%;
+    left: 43%;
+
+    // background-color: #fefefe;
+    border-radius: 15%;
+    border: 1px solid #000;
+
+    width: 15%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &>span{
+        text-align: right;
+        font-size: 1.3rem;
+    }
+
+    &>.minl{
+        color: orangered;
+    }
+
+    &>.secl{
+        color: hue($color: #404666);
+    }
+}
+
+.navbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    padding: 1.5% 3%;
+
+    display: inline-block;
+    text-align: center;
+
+    &>svg{
+        height: 26px;
+        width: 26px;
+
+        fill: rgba(255, 255, 255, 0.596);
+    }
+}
+
+.btnUp{
+
+    &>svg{
+        transition: all 0.2s;
+        fill: orangered;
+    }
+}
+
+.refresh{
+    display: inline-block;
+    text-align: center;
+}
+.refreshsvg{
+    height: 30px;
+    width: 30px;
+}
+
+////////////////////        S C R E E N         ///////////
+
+.screenpanel{
+    border: 1px dotted #444;
+    margin-top: 1%;
+
+    font-size: 1.2rem;
+    color: #fff;
+
+    padding: 3.5% 3%;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.screen{
+
+}
+
+@media only screen and (min-width: 600px){
+    .screenpanel{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .screenpanel{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .screenpanel{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .screenpanel{
+        width: 55%;
+    }
+}
+
+.bounce{
+    animation: bounce 1.0s ease infinite alternate-reverse;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-7%) scale(1.02);
+    }
+    100%{
+        transform: translateY(7%) scale(0.97);
+    }
+}
+
+// .beacons{
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: ;
+//     align-items: center;
+// }

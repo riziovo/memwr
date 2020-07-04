@@ -1,0 +1,67 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M402.286 182.857v438.857c0 20-16.571 36.571-36.571 36.571v0 329.143c0 20-16.571 36.571-36.571 36.571h-292.571c-20 0-36.571-16.571-36.571-36.571v-292.571l142.286-498.857c2.286-8 9.714-13.143 17.714-13.143h242.286zM585.143 182.857v402.286h-146.286v-402.286h146.286zM1024 694.857v292.571c0 20-16.571 36.571-36.571 36.571h-292.571c-20 0-36.571-16.571-36.571-36.571v-329.143c-20 0-36.571-16.571-36.571-36.571v-438.857h242.286c8 0 15.429 5.143 17.714 13.143zM420.571 18.286v128h-201.143v-128c0-10.286 8-18.286 18.286-18.286h164.571c10.286 0 18.286 8 18.286 18.286zM804.571 18.286v128h-201.143v-128c0-10.286 8-18.286 18.286-18.286h164.571c10.286 0 18.286 8 18.286 18.286z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "binoculars"
+        ],
+        "grid": 14
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 0,
+        "prevSize": 28,
+        "name": "binoculars"
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "ico",
+      "png": false,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "ico",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

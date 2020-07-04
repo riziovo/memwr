@@ -1,38 +1,63 @@
 .App {
   text-align: center;
+
+  position: relative;
+
+min-height: 100vh;
+height: 100%;
+/* max-height: max-content; */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ///////////////////////////// B A C K D R O P ////////////////////////// */
+
+
+.fog{
+  background: url(./background/m1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.back1, .back2{
+
+  background-size: cover;
+  background-repeat: repeat;
+
+  height: 100%;
+  width: 300%;
+
+  transform-origin: -120vw;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.back1{
+  background: url(./background/fog1.png);
+  animation: fog 30s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
+.back2{
+  background: url(./background/fog1.png);
+  animation: fog 30s linear infinite;
 }
 
-@keyframes App-logo-spin {
+@keyframes fog {
   from {
-    transform: rotate(0deg);
+    transform: translate3d(0,0,0);
   }
-  to {
-    transform: rotate(360deg);
+  to{
+    transform: translate3d(-200vw,0,0);
   }
 }
+
+
