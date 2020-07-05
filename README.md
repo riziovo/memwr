@@ -1,3 +1,18 @@
+### MEMWR.
+### Multiplayer Game. pit your photographic memory capability against others.
+
+Engage in multiplayer battles across the globe with your memory as the only weapon. Gauge your personal memory.
+
+A working demo is posted on the below link
+
+<b>Link </b> >> www.riziovo.com/projects.html#projects 
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
